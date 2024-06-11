@@ -13,21 +13,11 @@ import LineChart from "components/charts/LineChart";
 
 const TotalSpent = () => {
   return (
-    <Card extra="!p-[20px] text-center">
+    <Card extra="!p-[20px] text-center flex justify-between lg:h-full">
       <div className="flex justify-between">
-        <button className="linear mt-1 flex items-center justify-center gap-2 rounded-lg bg-lightPrimary p-2 text-gray-600 transition duration-200 hover:cursor-pointer hover:bg-gray-100 active:bg-gray-200 dark:bg-navy-700 dark:hover:opacity-90 dark:active:opacity-80">
-          <MdOutlineCalendarToday />
-          <span className="text-sm font-medium text-gray-600">This month</span>
-        </button>
-        <button className="!linear z-[1] flex items-center justify-center rounded-lg bg-lightPrimary p-2 text-brand-500 !transition !duration-200 hover:bg-gray-100 active:bg-gray-200 dark:bg-navy-700 dark:text-white dark:hover:bg-white/20 dark:active:bg-white/10">
-          <MdBarChart className="h-6 w-6" />
-        </button>
-      </div>
-
-      <div className="flex h-full w-full flex-row justify-between sm:flex-wrap lg:flex-nowrap 2xl:overflow-hidden">
-        <div className="flex flex-col">
-          <p className="mt-[20px] text-3xl font-bold text-navy-700 dark:text-white">
-            $37.5K
+        <div className="flex flex-col ">
+          <p className="text-3xl font-bold text-navy-700 dark:text-white">
+            Rp69.5M
           </p>
           <div className="flex flex-col items-start">
             <p className="mt-2 text-sm text-gray-600">Total Spent</p>
@@ -37,6 +27,25 @@ const TotalSpent = () => {
             </div>
           </div>
         </div>
+        <div className="flex gap-2 h-10">
+          <select className="linear flex items-center justify-center gap-2 rounded-lg bg-lightPrimary p-2 text-gray-600 transition duration-200 hover:cursor-pointer hover:bg-gray-100 active:bg-gray-200 dark:bg-navy-700 dark:hover:opacity-90 dark:active:opacity-80">
+            <option className="text-sm font-medium text-gray-600">This month</option>
+            <option className="text-sm font-medium text-gray-600">6 months</option>
+            <option className="text-sm font-medium text-gray-600">This year</option>
+          </select>
+          <select className="linear flex items-center justify-center gap-2 rounded-lg bg-lightPrimary p-2 text-gray-600 transition duration-200 hover:cursor-pointer hover:bg-gray-100 active:bg-gray-200 dark:bg-navy-700 dark:hover:opacity-90 dark:active:opacity-80">
+            <option className="text-sm font-medium text-gray-600">Balance</option>
+            <option className="text-sm font-medium text-gray-600">Revenue</option>
+            <option className="text-sm font-medium text-gray-600">Expense</option>
+          </select>
+          <button className="!linear z-[1] flex items-center justify-center rounded-lg bg-lightPrimary p-2 text-brand-500 !transition !duration-200 hover:bg-gray-100 active:bg-gray-200 dark:bg-navy-700 dark:text-white dark:hover:bg-white/20 dark:active:bg-white/10">
+            <MdBarChart className="h-6 w-6" />
+          </button>
+        </div>
+      </div>
+
+      <div className="flex h-full w-full flex-row justify-between sm:flex-wrap lg:flex-nowrap 2xl:overflow-hidden">
+        
         <div className="h-full w-full">
           <LineChart
             options={lineChartOptionsTotalSpent}

@@ -24,61 +24,39 @@ const Dashboard = () => {
       <div className="mt-3 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-6">
         <Widget
           icon={<MdBarChart className="h-7 w-7" />}
-          title={"Earnings"}
-          subtitle={"$340.5"}
+          title={"Revenue this month"}
+          subtitle={"Rp75.500.000"}
+          positive={"+25%"}
+          description={"since last month"}
         />
         <Widget
-          icon={<IoDocuments className="h-6 w-6" />}
-          title={"Spend this month"}
-          subtitle={"$642.39"}
+          icon={<MdBarChart className="h-6 w-6" />}
+          title={"Expense this month"}
+          subtitle={"Rp69.550.000"}
+          negative={"+5%"}
+          description={"since last month"}
         />
         <Widget
-          icon={<MdBarChart className="h-7 w-7" />}
-          title={"Sales"}
-          subtitle={"$574.34"}
-        />
-        <Widget
-          icon={<MdDashboard className="h-6 w-6" />}
-          title={"Your Balance"}
-          subtitle={"$1,000"}
-        />
-        <Widget
-          icon={<MdBarChart className="h-7 w-7" />}
-          title={"New Tasks"}
-          subtitle={"145"}
-        />
-        <Widget
-          icon={<IoMdHome className="h-6 w-6" />}
-          title={"Total Projects"}
-          subtitle={"$2433"}
+          icon={<IoDocuments className="h-7 w-7" />}
+          title={"Events"}
+          subtitle={"190"}
         />
       </div>
 
       {/* Charts */}
 
-      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
-        <TotalSpent />
-        <WeeklyRevenue />
+      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="md:col-span-2">
+          <TotalSpent />
+        </div>
+        <div className="md:col-span-1">
+          <PieChartCard />
+        </div>
       </div>
 
       {/* Tables & Charts */}
 
-      <div className="mt-5 grid grid-cols-1 gap-5 xl:grid-cols-2">
-        {/* Check Table */}
-        <div>
-          <CheckTable
-            columnsData={columnsDataCheck}
-            tableData={tableDataCheck}
-          />
-        </div>
-
-        {/* Traffic chart & Pie Chart */}
-
-        <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
-          <DailyTraffic />
-          <PieChartCard />
-        </div>
-
+      <div className="mt-5 grid grid-cols-1 gap-5">
         {/* Complex Table , Task & Calendar */}
 
         <ComplexTable
@@ -86,14 +64,6 @@ const Dashboard = () => {
           tableData={tableDataComplex}
         />
 
-        {/* Task chart & Calendar */}
-
-        <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
-          <TaskCard />
-          <div className="grid grid-cols-1 rounded-[20px]">
-            <MiniCalendar />
-          </div>
-        </div>
       </div>
     </div>
   );
