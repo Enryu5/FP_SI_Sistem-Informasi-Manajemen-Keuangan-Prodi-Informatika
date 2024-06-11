@@ -139,6 +139,8 @@ module.exports = {
       lightPrimary: "#F4F7FE",
       blueSecondary: "#4318FF",
       brandLinear: "#868CFF",
+      redPrimary: "#D62554",
+      greenPrimary: "#12B76A",
       gray: {
         50: "#f8f9fa",
         100: "#edf2f7",

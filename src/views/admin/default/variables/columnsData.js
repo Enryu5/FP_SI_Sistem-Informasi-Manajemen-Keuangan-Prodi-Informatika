@@ -56,20 +56,32 @@ export const columnsDataColumns = [
 ];
 
 export const columnsDataComplex = [
+  // {
+  //   Header: "NO",
+  //   accessor: "no",
+  // },
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "EVENT",
+    accessor: "event",
+  },
+  {
+    Header: "ORGANIZER",
+    accessor: "organizer",
+  },
+  {
+    Header: "BUDGET",
+    accessor: "budget",
+  },
+  {
+    Header: "REVENUE",
+    accessor: "revenue",
+  },
+  {
+    Header: "EXPENSE",
+    accessor: "expense",
   },
   {
     Header: "STATUS",
     accessor: "status",
-  },
-  {
-    Header: "DATE",
-    accessor: "date",
-  },
-  {
-    Header: "PROGRESS",
-    accessor: "progress",
   },
 ];
