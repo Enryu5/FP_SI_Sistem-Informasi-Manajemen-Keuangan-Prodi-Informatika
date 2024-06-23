@@ -28,9 +28,9 @@ const routes = [
     component: <MainDashboard />,
   },
   {
-    name: "NFT Marketplace",
+    name: "Transaction",
     layout: "/admin",
-    path: "nft-marketplace",
+    path: "transaction",
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
     component: <NFTMarketplace />,
     secondary: true,
