@@ -72,7 +72,7 @@ const handleSubmit = (e) => {
 
 const handleRowClick = (id) => {
     console.log(`Navigating to event with ID: ${id}`);
-    navigate(`event/${id}`);
+    navigate(`/admin/event-management/event/${id}`);
 };
 
 return (
@@ -158,7 +158,7 @@ return (
                         <div className="flex items-center gap-2">
                         <div className="h-[30px] w-[30px] rounded-full">
                             <img
-                            src={cell.value[1]}
+                            src={cell.value[2]}
                             className="h-full w-full rounded-full"
                             alt=""
                             />

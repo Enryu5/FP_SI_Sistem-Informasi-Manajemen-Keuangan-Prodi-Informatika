@@ -64,17 +64,17 @@ const routes = [
     sidebar: true,
   },
   {
-    path: "events/:id",
+    path: "event-management/event/:id",
+    layout: "/admin",
     name: "Event Detail",
     component: <EventDetail />,
-    layout: "/admin",
     sidebar: false,
   },
   {
-    path: "events",
+    path: "event",
+    layout: "/admin",
     name: "Event List",
     component: <ComplexTable />,
-    layout: "/admin",
     sidebar: false
   },
   // ...

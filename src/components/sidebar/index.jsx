@@ -2,6 +2,7 @@
 
 import { HiX } from "react-icons/hi";
 import Links from "./components/Links";
+import Logo from "assets/img/logo/LogoSIAKI.svg";
 
 import routes from "routes.js";
 
@@ -20,8 +21,7 @@ const Sidebar = ({ open, onClose }) => {
       </span>
 
       <div className={`mx-[56px] mt-[50px] flex items-center text-3xl font-bold`}>
-        {/* <img src="sLogoSIAKI.png" className="h-24 w-full" alt="Logo SIAKI"/> */}
-        S I A K I
+        <img src={Logo} className="h-16 w-full" alt="Logo SIAKI"/>
       </div>
       <div class="mt-[58px] mb-7 h-px bg-gray-300 dark:bg-white/30" />
       {/* Nav item */}

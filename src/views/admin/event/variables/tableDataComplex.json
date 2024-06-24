@@ -4,11 +4,15 @@
     "event": "Supremasi",
     "organizer" : [
         "@maddison_c21",
+        "Maddison",
         "https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2244&q=80"
     ],
     "budget": 37500000,
     "expense": 32500000,
+    "revenue": 3000000,
     "status": "Done",
+    "description": null,
+    "link": null,
     "time range": "10 Jan - 14 Apr 2024"
     },
     {
@@ -16,11 +20,15 @@
     "event": "SNATIA",
     "organizer" : [
         "@karl.will02",
+        "Karl William",
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
     ],
     "budget": 37500000,
     "expense": 32500000,
+    "revenue": 3000000,
     "status": "Done",
+    "description": null,
+    "link": null,
     "time range": "10 Jan - 14 Apr 2024"
     },
     {
@@ -28,11 +36,15 @@
     "event": "Workshop TA",
     "organizer" : [
         "@andreea.1z",
+        "Andrea Zoe",
         "https://images.unsplash.com/photo-1573766064535-6d5d4e62bf9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1315&q=80"
     ],
     "budget": 37500000,
     "expense": 32500000,
+    "revenue": 3000000,
     "status": "On Progress",
+    "description": null,
+    "link": null,
     "time range": "10 Jan - 14 Apr 2024"
     },
     {
@@ -40,11 +52,15 @@
     "event": "Bakti Sosial",
     "organizer" : [
         "@abraham47.y",
+        "Abraham Y",
         "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
     ],
     "budget": 37500000,
     "expense": 32500000,
+    "revenue": 3000000,
     "status": "Done",
+    "description": null,
+    "link": null,
     "time range": "10 Jan - 14 Apr 2024"
     },
     {
@@ -52,11 +68,15 @@
     "event": "Informatika Mengajar",
     "organizer" : [
         "@venus.sys",
+        "Venus System",
         "https://pbs.twimg.com/profile_images/1404161552635371526/251mudeO_400x400.jpg"
     ],
     "budget": 37500000,
     "expense": 32500000,
-    "status": "idt",
+    "revenue": 3000000,
+    "status": "Not Started",
+    "description": null,
+    "link": null,
     "time range": "10 Jan - 14 Apr 2024"
     }
 
