@@ -19,8 +19,9 @@ const Sidebar = ({ open, onClose }) => {
         <HiX />
       </span>
 
-      <div className={`mx-[56px] mt-[50px] flex items-center`}>
-        <img src="src/components/sidebar/LogoSIAKI.png" className="h-24 w-full" alt="Logo SIAKI"/>
+      <div className={`mx-[56px] mt-[50px] flex items-center text-3xl font-bold`}>
+        {/* <img src="sLogoSIAKI.png" className="h-24 w-full" alt="Logo SIAKI"/> */}
+        S I A K I
       </div>
       <div class="mt-[58px] mb-7 h-px bg-gray-300 dark:bg-white/30" />
       {/* Nav item */}

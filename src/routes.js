@@ -2,10 +2,12 @@ import React from "react";
 
 // Admin Imports
 import MainDashboard from "views/admin/default";
-import NFTMarketplace from "views/admin/marketplace";
+import Transaction from "views/admin/marketplace";
 import Profile from "views/admin/profile";
-import DataTables from "views/admin/tables";
+import EventManagement from "views/admin/event";
 import RTLDefault from "views/rtl/default";
+import EventDetail from 'views/admin/event/components/EventDetail';
+import ComplexTable from 'views/admin/event/components/ComplexTable';
 
 // Auth Imports
 import SignIn from "views/auth/SignIn";
@@ -26,21 +28,24 @@ const routes = [
     path: "default",
     icon: <MdHome className="h-6 w-6" />,
     component: <MainDashboard />,
+    sidebar: true,
   },
   {
     name: "Transaction",
     layout: "/admin",
     path: "transaction",
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
-    component: <NFTMarketplace />,
+    component: <Transaction />,
     secondary: true,
+    sidebar: true,
   },
   {
-    name: "Data Tables",
+    name: "Event Managemnt",
     layout: "/admin",
     icon: <MdBarChart className="h-6 w-6" />,
-    path: "data-tables",
-    component: <DataTables />,
+    path: "event-management",
+    component: <EventManagement />,
+    sidebar: true,
   },
   {
     name: "Profile",
@@ -48,6 +53,7 @@ const routes = [
     path: "profile",
     icon: <MdPerson className="h-6 w-6" />,
     component: <Profile />,
+    sidebar: true,
   },
   {
     name: "Sign In",
@@ -55,13 +61,29 @@ const routes = [
     path: "sign-in",
     icon: <MdLock className="h-6 w-6" />,
     component: <SignIn />,
+    sidebar: true,
   },
   {
-    name: "RTL Admin",
-    layout: "/rtl",
-    path: "rtl",
-    icon: <MdHome className="h-6 w-6" />,
-    component: <RTLDefault />,
+    path: "events/:id",
+    name: "Event Detail",
+    component: <EventDetail />,
+    layout: "/admin",
+    sidebar: false,
   },
+  {
+    path: "events",
+    name: "Event List",
+    component: <ComplexTable />,
+    layout: "/admin",
+    sidebar: false
+  },
+  // ...
+  // {
+  //   name: "RTL Admin",
+  //   layout: "/rtl",
+  //   path: "rtl",
+  //   icon: <MdHome className="h-6 w-6" />,
+  //   component: <RTLDefault />,
+  // },
 ];
 export default routes;
