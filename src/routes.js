@@ -5,6 +5,7 @@ import MainDashboard from "views/admin/default";
 import Transaction from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import EventManagement from "views/admin/event";
+import RoleManagement from "views/admin/role";
 import RTLDefault from "views/rtl/default";
 import EventDetail from 'views/admin/event/components/EventDetail';
 import ComplexTable from 'views/admin/event/components/ComplexTable';
@@ -19,6 +20,7 @@ import {
   MdBarChart,
   MdPerson,
   MdLock,
+  MdSupervisedUserCircle,
 } from "react-icons/md";
 
 const routes = [
@@ -40,11 +42,19 @@ const routes = [
     sidebar: true,
   },
   {
-    name: "Event Managemnt",
+    name: "Event Management",
     layout: "/admin",
     icon: <MdBarChart className="h-6 w-6" />,
     path: "event-management",
     component: <EventManagement />,
+    sidebar: true,
+  },
+  {
+    name: "Role Management",
+    layout: "/admin",
+    icon: <MdSupervisedUserCircle className="h-6 w-6" />,
+    path: "role-management",
+    component: <RoleManagement />,
     sidebar: true,
   },
   {
@@ -75,7 +85,7 @@ const routes = [
     name: "Event List",
     component: <ComplexTable />,
     layout: "/admin",
-    sidebar: false
+    sidebar: false,
   },
   // ...
   // {
