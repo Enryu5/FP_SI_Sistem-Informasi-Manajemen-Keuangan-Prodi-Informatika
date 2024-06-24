@@ -14,14 +14,12 @@ import eventData from 'views/admin/event/variables/tableDataComplex.json';
 const App = () => {
   return (
     <Routes>
+      <Route path="admin/event-management/event/:id" element={ <EventDetail eventData={eventData} />} />
       <Route path="/" element={<Navigate to="/admin" replace />} />
-      <Route path="admin/event-management/event/:id" element={<EventDetail eventData={eventData} />} />
       <Route path="/" element={<ComplexTable columnsData={columnsDataComplex} tableData={eventData} />} />
       <Route path="auth/*" element={<AuthLayout />} />
       <Route path="admin/*" element={<AdminLayout />} />
       <Route path="rtl/*" element={<RtlLayout />} />
-      
-
     </Routes>
   );
 };
