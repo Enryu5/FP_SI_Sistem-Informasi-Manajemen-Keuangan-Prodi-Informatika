@@ -3,6 +3,7 @@ import React from "react";
 // Admin Imports
 import MainDashboard from "views/admin/default";
 import Transaction from "views/admin/marketplace";
+import AdminTransaction from "views/admin/transactionadmin";
 import Profile from "views/admin/profile";
 import Planning from "views/admin/planning";
 import EventManagement from "views/admin/event";
@@ -23,6 +24,7 @@ import {
   MdPerson,
   MdLock,
   MdSupervisedUserCircle,
+  MdCurrencyExchange,
 } from "react-icons/md";
 
 const routes = [
@@ -40,6 +42,15 @@ const routes = [
     path: "transaction",
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
     component: <Transaction />,
+    secondary: true,
+    sidebar: true,
+  },
+  {
+    name: "Admin Transaction",
+    layout: "/admin",
+    path: "admin-transaction",
+    icon: <MdCurrencyExchange className="h-6 w-6" />,
+    component: <AdminTransaction />,
     secondary: true,
     sidebar: true,
   },
