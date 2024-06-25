@@ -13,7 +13,19 @@
     "status": "Done",
     "description": null,
     "link": null,
-    "time range": "10 Jan - 14 Apr 2024"
+    "time range": "10 Jan - 14 Apr 2024",
+    "categories": [
+        {
+        "name": "Marketing",
+        "expenseTarget": 500000,
+        "actualExpense": 480000
+        },
+        {
+        "name": "Operations",
+        "expenseTarget": 700000,
+        "actualExpense": 730000
+        }
+    ]
     },
     {
     "id": "2",
@@ -29,7 +41,19 @@
     "status": "Done",
     "description": null,
     "link": null,
-    "time range": "10 Jan - 14 Apr 2024"
+    "time range": "10 Jan - 14 Apr 2024",
+    "categories": [
+        {
+        "name": "Marketing",
+        "expenseTarget": 500000,
+        "actualExpense": 480000
+        },
+        {
+        "name": "Operations",
+        "expenseTarget": 700000,
+        "actualExpense": 730000
+        }
+    ]
     },
     {
     "id": "3",
@@ -45,7 +69,19 @@
     "status": "On Progress",
     "description": null,
     "link": null,
-    "time range": "10 Jan - 14 Apr 2024"
+    "time range": "10 Jan - 14 Apr 2024",
+    "categories": [
+        {
+        "name": "Marketing",
+        "expenseTarget": 500000,
+        "actualExpense": 480000
+        },
+        {
+        "name": "Operations",
+        "expenseTarget": 700000,
+        "actualExpense": 730000
+        }
+    ]
     },
     {
     "id": "4",
@@ -61,7 +97,19 @@
     "status": "Done",
     "description": null,
     "link": null,
-    "time range": "10 Jan - 14 Apr 2024"
+    "time range": "10 Jan - 14 Apr 2024",
+    "categories": [
+        {
+        "name": "Marketing",
+        "expenseTarget": 500000,
+        "actualExpense": 480000
+        },
+        {
+        "name": "Operations",
+        "expenseTarget": 700000,
+        "actualExpense": 730000
+        }
+    ]
     },
     {
     "id": "5",
@@ -77,7 +125,19 @@
     "status": "Not Started",
     "description": null,
     "link": null,
-    "time range": "10 Jan - 14 Apr 2024"
+    "time range": "10 Jan - 14 Apr 2024",
+    "categories": [
+        {
+        "name": "Marketing",
+        "expenseTarget": 500000,
+        "actualExpense": 480000
+        },
+        {
+        "name": "Operations",
+        "expenseTarget": 700000,
+        "actualExpense": 730000
+        }
+    ]
     }
 
 ]

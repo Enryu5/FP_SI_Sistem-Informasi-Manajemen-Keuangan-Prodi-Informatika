@@ -78,6 +78,38 @@
     "description": null,
     "link": null,
     "time range": "10 Jan - 14 Apr 2024"
+    },
+    {
+    "id": "6",
+    "event": "Informatika Mengajar",
+    "organizer" : [
+        "@venus.sys",
+        "Venus System",
+        "https://pbs.twimg.com/profile_images/1404161552635371526/251mudeO_400x400.jpg"
+    ],
+    "budget": 37500000,
+    "expense": 32500000,
+    "revenue": 3000000,
+    "status": "Not Started",
+    "description": null,
+    "link": null,
+    "time range": "10 Jan - 14 Apr 2024"
+    },
+    {
+    "id": "7",
+    "event": "Informatika Mengajar",
+    "organizer" : [
+        "@venus.sys",
+        "Venus System",
+        "https://pbs.twimg.com/profile_images/1404161552635371526/251mudeO_400x400.jpg"
+    ],
+    "budget": 37500000,
+    "expense": 32500000,
+    "revenue": 3000000,
+    "status": "Not Started",
+    "description": null,
+    "link": null,
+    "time range": "10 Jan - 14 Apr 2024"
     }
 
 ]
