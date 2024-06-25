@@ -4,10 +4,12 @@ import React from "react";
 import MainDashboard from "views/admin/default";
 import Transaction from "views/admin/marketplace";
 import Profile from "views/admin/profile";
+import Planning from "views/admin/planning";
 import EventManagement from "views/admin/event";
 import RoleManagement from "views/admin/role";
 import RTLDefault from "views/rtl/default";
 import EventDetail from 'views/admin/event/components/EventDetail';
+import PlanDetail from 'views/admin/planning/components/PlanDetail';
 import ComplexTable from 'views/admin/event/components/ComplexTable';
 
 // Auth Imports
@@ -58,6 +60,14 @@ const routes = [
     sidebar: true,
   },
   {
+    name: "Planning",
+    layout: "/admin",
+    path: "planning",
+    icon: <MdHome className="h-6 w-6" />,
+    component: <Planning />,
+    sidebar: true,
+  },
+  {
     name: "Profile",
     layout: "/admin",
     path: "profile",
@@ -81,20 +91,20 @@ const routes = [
     sidebar: false,
   },
   {
-    path: "event",
+    path: "planning/event/:id",
     layout: "/admin",
-    name: "Event List",
-    component: <ComplexTable />,
-    sidebar: false
-
+    name: "Event Detail",
+    component: <PlanDetail />,
+    sidebar: false,
   },
-  // ...
   // {
-  //   name: "RTL Admin",
-  //   layout: "/rtl",
-  //   path: "rtl",
-  //   icon: <MdHome className="h-6 w-6" />,
-  //   component: <RTLDefault />,
+  //   path: "event",
+  //   layout: "/admin",
+  //   name: "Event List",
+  //   component: <ComplexTable />,
+  //   sidebar: false
+
   // },
+
 ];
 export default routes;
