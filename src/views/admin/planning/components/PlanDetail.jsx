@@ -91,12 +91,7 @@ const EventDetail = () => {
                 <div className="col-span-12 lg:!mb-0">
                     <Card extra={"w-full h-full p-3"}>
                     <h4 className="text-lg font-bold text-navy-700 dark:text-white">Expense</h4>
-                        <div className="lg:grid-cols-3 items-center gap-4 justify-center">
-                            {/* <div className="col-span-12 flex flex-col justify-center items-center py-16">
-                                <img className="h-50 w-50" src={noData} alt="There's no data" />
-                                <p className="text-base text-gray-600">The event has not made any movement. </p>
-                                <p className="text-base text-gray-600">There's haven't been any planning made yet.</p>
-                            </div> */}
+                        <div className=" grid lg:grid-cols-3 items-center gap-4 justify-center">
                             <div>
                                 <div className="border border-gray-200 rounded-md p-3">
                                     <div className="flex justify-between items-center">
