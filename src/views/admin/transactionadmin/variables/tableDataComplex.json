@@ -1,0 +1,18 @@
+[
+    {
+        "no": "1",
+        "transaction": "Stage Rental",
+        "event": "Supremasi",
+        "category": "Decoration",
+        "date": "1 Aug 2024",
+        "amount": -1500000
+    },
+    {
+        "no": "2",
+        "transaction": "Meal for Attendees",
+        "event": "Workshop Tugas Akhir",
+        "category": "Consumption",
+        "date": "1 Aug 2024",
+        "amount": -4300000
+    }
+]
